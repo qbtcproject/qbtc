@@ -1,0 +1,29 @@
+# Local dependencies and builds
+**/.deps/
+**/build/
+**/build-*/
+**/__pycache__/
+*.pyc
+*.o
+*.a
+*.lib
+*.exe
+*.zip
+*.tar.gz
+# Wallet, chain, control and Tor secrets
+*.qwlt
+*.db
+*.db.*
+*.tx
+*.control
+*.lock
+*.log
+*.tmp
+.env
+.env.*
+**/onion-service/
+**/state/
+**/wallet-address.json
+**/address.txt
+**/pending-payment.json*
+**/onion-address.txt
