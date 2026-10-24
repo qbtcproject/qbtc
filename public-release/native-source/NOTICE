@@ -1,0 +1,20 @@
+QBTC source code: MIT license, see LICENSE.
+
+OpenSSL 3.5.9 is an external build dependency, downloaded separately under the
+Apache License 2.0. Its source archive and license are not embedded in this QBTC
+source delivery. Upstream: https://github.com/openssl/openssl/tree/openssl-3.5.9
+
+External Wycheproof verification data is read from the pinned OpenSSL source
+archive; that file carries the OpenSSL Apache 2.0 notice and identifies the
+upstream Wycheproof commit. No private keys from external fixtures are copied
+into QBTC. No external cryptographic algorithm source is reimplemented here.
+
+cryptography==50.0.2 is an optional test-only dependency, not a runtime dependency
+of QBTC executables. The cross-check is between OpenSSL-backed interfaces, not
+between independently designed cryptographic implementations.
+
+QBTC 0.3.0 includes cross-compiled Windows x64 executables in windows-x64/.
+These statically link OpenSSL and LLVM-MinGW runtime components. Their upstream
+license texts are included in windows-x64/licenses/. Executables are unsigned and
+have not been run on Windows in the producing environment. The source archive of
+OpenSSL is not embedded. Full toolchain and dependency audit remains outstanding.
