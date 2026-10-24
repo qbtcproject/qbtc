@@ -1,0 +1,35 @@
+{
+  "schema": "qbtc-build-provenance-v1",
+  "date": "2026-10-22",
+  "source_base_commit": "269a9a83be18d86f3bce368b33a6e050b458b7d1",
+  "windows_compiler": "GCC MinGW-w64 13.2.0-posix, Ubuntu snapshot packages",
+  "linux_compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "openssl_version": "3.5.9",
+  "openssl_archive_sha256": "603f5602e2eef00d77fbd429d34dcd5822bb301757a1bc9cdb24c670f1eb859a",
+  "windows_crypto_static_sha256": "f760aa33e47f47fd16e3662fd057ddc4e45bc5e3135a8731eaab1db239199038",
+  "windows_unicode_entrypoints": true,
+  "windows_executed": false,
+  "profiles": {
+    "bin": {
+      "qbtc-mainnet-tests.exe": "355c36c29e6ae2aa36ced1d70d3638c73ac0ab49dc89ef8ec631b9609c6f7309",
+      "qbtc-peer.exe": "43a101a34ff534112ead03f407bca3074e6a5fdd6f20dd10fe5f9441f6ada23e",
+      "qbtc-wallet.exe": "94df98c8be002f354eeee75e32e17325ba15c5ef7a16799bc043ebe87442ea5d",
+      "qbtc.exe": "91bb0165b9a8264d56902660165e56c0f00bb9bfa6e49d454d4fa036db5f0513"
+    },
+    "final-bin": {
+      "qbtc-peer.exe": "e8888bad9780b8939cfd73adfa274e0ffd515eca9f22da8d0a76041d670b318d",
+      "qbtc-wallet.exe": "fec9e2ec43942606ef553ca079435208a05da7f6049582d67501cd13448303e8",
+      "qbtc.exe": "31c4e2e66f362b7029641f70bdd307f7a7dfce09404043d536987e3aff10be58"
+    }
+  },
+  "native_source_manifest_sha256": "b57e8e8b7ff896dbb2767e9335325c20e1f59a3793e27508f9a39c8284dd004c",
+  "windows_toolchain_packages_sha256": {
+    "binutils-mingw-w64-x86-64_2.41.90.20240122-1ubuntu1+11.4_amd64.deb": "28bfabbf64a68813a56360bca056072af9ff71ef4090a4b8a8a085afcda3e4dd",
+    "g++-mingw-w64-x86-64-posix_13.2.0-6ubuntu1+26.1_amd64.deb": "52c3613f386e462ae71105d1a0b2a48d866ccb048ad253acff629c5a2291252d",
+    "gcc-mingw-w64-base_13.2.0-6ubuntu1+26.1_amd64.deb": "a30c07e807e9874ea93909448c5d6d37f9569ebe60ad32de8e490aad198538a3",
+    "gcc-mingw-w64-x86-64-posix-runtime_13.2.0-6ubuntu1+26.1_amd64.deb": "aca6b438e0b55b11cedcf1170a1ee26e7979e34192e34f6e6389e560908a5bfc",
+    "gcc-mingw-w64-x86-64-posix_13.2.0-6ubuntu1+26.1_amd64.deb": "0855fa1d4a618550faac3a3e4352aa3226833b28184ad3c3b496a68a22c4eda2",
+    "mingw-w64-common_11.0.1-3build1_all.deb": "4a42fd30fbc3838c58c929d8a4882682fc12408bb7a0e6cafa913c0f0a57c187",
+    "mingw-w64-x86-64-dev_11.0.1-3build1_all.deb": "018480a62907fcca19c6bf2975ae01f5c92c23dee8c3cf7a8355c10bf7d42c6f"
+  }
+}

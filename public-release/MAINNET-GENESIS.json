@@ -1,0 +1,16 @@
+{
+  "network": "mainnet",
+  "network_id": "0x51424d32",
+  "genesis_timestamp": 1792627200,
+  "genesis_nonce": 509501,
+  "genesis_hash": "000006d71412362513fb97c48c0a1371b0edd3e7e6a29e91a8318f889181e5dd1255621ebcc717083a1a135c57c12b6c3885e2e0dbfac410d43089fbb49ed73c",
+  "genesis_transactions": 0,
+  "genesis_reward_atoms": 0,
+  "pow_limit": "00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "p2p_port": 19021,
+  "control_port": 19121,
+  "address_prefix": "qbc",
+  "cap_atoms": 2100000000000000,
+  "initial_rewarded_block_target": "0000000148aafe12826323f74d7530852be32f6451d74282a550540100748422f5eeaef2a8d5f063f78d35783e71af206f734d4e7001331692e1ad82d828049c",
+  "status": "experimental-reset-v2-not-official"
+}

@@ -1,0 +1,109 @@
+{
+  "leak_sanitizer_enabled": false,
+  "suites": [
+    {
+      "suite": "consensus",
+      "exit_code": 0,
+      "stdout": "PASS 13443477 checks\nML-DSA provider available: yes\nGenesis: 1b2161970c685bebb89fc0046a2a63582dce2bf417c8653038151e1db76141c87cce922cc340c8e7cb4f38c21119e39ea319a69ccb54fb3c2e284256b093cce5\nEmission (atomic units): 2099994997690000\n",
+      "stderr": ""
+    },
+    {
+      "suite": "wallet",
+      "exit_code": 0,
+      "stdout": "PASS wallet/ML-DSA 2108 checks (positive signatures, encrypted recovery, fees, double spends, signed reorg)\n",
+      "stderr": ""
+    },
+    {
+      "suite": "journal",
+      "exit_code": 0,
+      "stdout": "PASS journal/undo 1395 checks (torn writes, checksum, migration, equal-work restore, deep reorg)\n",
+      "stderr": ""
+    },
+    {
+      "suite": "control",
+      "exit_code": 0,
+      "stdout": "PASS local control 1039 checks (HMAC, replay, expiry, capacity, private secret)\n",
+      "stderr": ""
+    },
+    {
+      "suite": "fuzz",
+      "exit_code": 0,
+      "stdout": "PASS structured mutation campaign: 20000 inputs, 6269 decoded, 985 accepted valid blocks, 19015 rejected atomically\n",
+      "stderr": ""
+    },
+    {
+      "suite": "mempool",
+      "exit_code": 0,
+      "stdout": "PASS mempool persistence 582 checks\n",
+      "stderr": ""
+    },
+    {
+      "suite": "internet_policy",
+      "exit_code": 0,
+      "stdout": "PASS internet address policy 67 checks\n",
+      "stderr": ""
+    },
+    {
+      "suite": "peers",
+      "exit_code": 0,
+      "stdout": "PASS peer discovery/persistence 437 checks (scope, corrupt store, restart, capacity, fairness, backoff)\n",
+      "stderr": ""
+    },
+    {
+      "suite": "parallel_mining",
+      "exit_code": 0,
+      "stdout": "fixture_address=qbr1pqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqzvn0yr\nPASS parallel mining: mode mapping, consensus-accepted blocks, cancellation, forward progress, nonce exhaustion\n",
+      "stderr": ""
+    },
+    {
+      "suite": "difficulty_launch",
+      "exit_code": 0,
+      "stdout": "PASS 2016-block integration, factor-four retarget, wrong-target rejection, shorter higher-work chain; disposable regtest only\n",
+      "stderr": ""
+    },
+    {
+      "suite": "security_admission",
+      "exit_code": 0,
+      "stdout": "PASS relay rejects malformed/oversized transactions before cryptography; signed over-policy transaction remains consensus-valid in block\n",
+      "stderr": ""
+    },
+    {
+      "suite": "request_budget",
+      "exit_code": 0,
+      "stdout": "PASS request budget: burst bound, fractional refill, backward time, long-idle cap, invalid configuration\n",
+      "stderr": ""
+    },
+    {
+      "suite": "node_policy",
+      "exit_code": 0,
+      "stdout": "PASS node policy: cache follows mining and reorganization; locator updates; novel transaction flood rate-limited without chain mutation\n",
+      "stderr": ""
+    },
+    {
+      "suite": "signer_console",
+      "exit_code": 0,
+      "stdout": "PASS restored payment independently validated and included in a disposable Regtest block\nPASS signer shows exact recipient/amount/fee; cancellation and overlong confirmation cannot sign; SEND authorizes signing; password hidden; oversized password rejected; wallet/chain unchanged; oversized payment creates no transaction file; encrypted backup restored in fresh Unicode/bracket data folder and spent successfully; native transaction status distinguishes unconfirmed and confirmed\n",
+      "stderr": ""
+    }
+  ],
+  "schema": "qbtc-internal-review-results-v1",
+  "date": "2026-10-24",
+  "source_base_commit": "5da7873d376451f946c87123acc58483300caa70",
+  "platform": "Linux",
+  "independent_audit": false,
+  "openssl_version": "3.5.9",
+  "openssl_sanitizer_instrumented": false,
+  "windows_executed": false,
+  "external_signature_vectors": {
+    "valid_accepted": 63,
+    "invalid_rejected": 15,
+    "nonempty_context_excluded": 3
+  },
+  "additional_checks": [
+    "final candidate genesis/target and height-zero restart",
+    "candidate local transport",
+    "real PowerShell/native wallet matching/different/stale backup checks",
+    "panel state failure/recovery",
+    "payment coordinator and exact retry"
+  ]
+}

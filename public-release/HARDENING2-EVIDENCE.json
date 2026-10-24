@@ -1,0 +1,49 @@
+{
+  "baseline": "618bcf5bf64dd285eeea0da8ea49e508498422db",
+  "date": "2026-10-22",
+  "kind": "observed incremental validation summary, not a fresh full-suite rerun",
+  "windows_execution": "pending",
+  "leak_sanitizer": "unavailable in executor",
+  "checks": [
+    {
+      "test": "request_budget",
+      "result": "PASS",
+      "instrumentation": "ASan/UBSan"
+    },
+    {
+      "test": "node_policy",
+      "result": "PASS",
+      "instrumentation": "ASan/UBSan"
+    },
+    {
+      "test": "wallet",
+      "result": "PASS 2108 checks",
+      "instrumentation": "ASan/UBSan"
+    },
+    {
+      "test": "signer_confirmation",
+      "result": "PASS",
+      "instrumentation": "native signer and fixture linked with ASan/UBSan, Linux PTY"
+    },
+    {
+      "test": "security_transport",
+      "result": "PASS",
+      "instrumentation": "real native nodes, disposable files and loopback TCP"
+    },
+    {
+      "test": "verified_tor",
+      "result": "PASS",
+      "instrumentation": "PowerShell, inert fixture archives; no Tor code executed"
+    },
+    {
+      "test": "auto_backend",
+      "result": "PASS 12 checks",
+      "instrumentation": "real native nodes, simulated Tor and Windows ownership"
+    },
+    {
+      "test": "Windows cross-build",
+      "result": "PASS",
+      "instrumentation": "GCC/MinGW strict warnings; static OpenSSL 3.5.9"
+    }
+  ]
+}
